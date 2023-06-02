@@ -1,4 +1,4 @@
-import Buttons from "../components/button";
+import Buttons from "../components/Buttons";
 import TitleSVG from "../assets/amba-ajar.svg";
 import BackgroundIcon from "../assets/Group.svg";
 import WicidaLogo1 from "../assets/STMIK-WICIDA-1.svg";
