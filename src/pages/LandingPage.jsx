@@ -27,7 +27,7 @@ function LandingPage() {
             <div className="row w-96 m-auto">
               <Buttons
                 title="Register"
-                btnClass="register w-32 h-8 rounded text-black text-xl font-bold"
+                btnClass="register landing-page-register w-32 h-8 rounded text-black text-xl font-bold"
                 name="Register"
                 onClickAction={() => {
                   navigate("/register");

@@ -12,6 +12,7 @@
   );
   height: 720px;
 }
+
 .LandingPage > #page2 {
   font-family: "Inter", sans-serif;
   background: linear-gradient(
@@ -29,10 +30,20 @@
   height: 317px;
 }
 .Get-Started {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: ease-in-out 0.2s;
+}
+.Get-Started:hover {
+  cursor: pointer;
+  background-color: #1093ff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 .Gabung-Sekarang {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: ease-in-out 0.2s;
+}
+.Gabung-Sekarang:hover {
+  cursor: pointer;
+  background-color: #1093ff;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 .Login-page {
