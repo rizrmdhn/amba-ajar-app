@@ -25,7 +25,6 @@ function asyncSetAuthUser({ email, password }) {
   return async (dispatch) => {
     try {
       const token = await api.login({ email, password });
-      console.log("🚀 ~ file: action.js:28 ~ return ~ token:", token);
       api.putAccessToken(token);
       const users = await api.getOwnProfile();
 
