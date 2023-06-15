@@ -6,8 +6,6 @@ import App from "./App";
 import store from "./states";
 
 import "sweetalert2/dist/sweetalert2.min.css";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min";
 import "animate.css";
 import "./styles/index.css";
 
