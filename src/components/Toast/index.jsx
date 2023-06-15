@@ -7,6 +7,9 @@ const myToast = MySwal.mixin({
   toast: true,
   position: "top-end",
   showConfirmButton: false,
+  customClass: {
+    container: "my-swal",
+  },
   timer: 1500,
   timerProgressBar: true,
   background: "#181818",

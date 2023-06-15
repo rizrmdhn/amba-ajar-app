@@ -9,9 +9,9 @@ export default function LoginPage() {
     useLogin();
 
   return (
-    <div className="Login-page">
-      <div className="container flex h-screen">
-        <div className="container-login h-min p-10">
+    <div className="Login-page flex">
+      <div className="container flex w-screen h-screen self-center">
+        <div className="container-login p-10">
           <div className="login-form m-12">
             <div className="login-form__header">
               <h1 className="login-form__header--title">Selamat Datang</h1>
@@ -47,8 +47,8 @@ export default function LoginPage() {
             <img src={LoginIcon} alt="Login Icon" />
           </div>
         </div>
-        <Trademark />
       </div>
+      <Trademark />
     </div>
   );
 }

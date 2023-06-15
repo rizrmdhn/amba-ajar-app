@@ -18,9 +18,9 @@ export default function RegisterPage() {
   ] = useRegister();
 
   return (
-    <div className="register-page">
-      <div className="container flex h-screen">
-        <div className="container-register h-min">
+    <div className="register-page flex">
+      <div className="container flex w-screen h-screen self-center">
+        <div className="container-register px-20 h-min">
           <div className="register-form p-6">
             <div className="register-form__header">
               <h1 className="register-form__header--title">Daftar</h1>
@@ -67,8 +67,8 @@ export default function RegisterPage() {
             />
           </div>
         </div>
-        <Trademark />
       </div>
+      <Trademark />
     </div>
   );
 }

@@ -21,20 +21,20 @@ function App() {
     return null;
   }
 
-  if (authUser === null) {
-    return (
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/register" element={<RegisterPage />} />
-      </Routes>
-    );
-  }
-
   return (
-    <Routes>
-      <Route path="/" element={<DashboardPage />} />
-    </Routes>
+    <div className="App">
+      {authUser !== null ? (
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
+        </Routes>
+      ) : (
+        <Routes>
+          <Route path="/" element={<DashboardPage />} />
+        </Routes>
+      )}
+    </div>
   );
 }
 

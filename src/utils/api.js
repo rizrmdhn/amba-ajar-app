@@ -60,7 +60,6 @@ const api = (() => {
     });
 
     const responseJson = await response.json();
-    console.log("🚀 ~ file: api.js:63 ~ login ~ responseJson:", responseJson);
 
     const { status, message } = responseJson;
 

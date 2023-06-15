@@ -18,10 +18,10 @@ function LandingPage() {
 
   return (
     <div className="LandingPage">
-      <div id="page1">
-        <div className="container">
-          <div className="col-1 flex m-auto">
-            <div className="row flex-initial w-96 m-auto mt-6">
+      <div id="page1" className="flex justify-center">
+        <div className="container mt-6">
+          <div className="col-1 flex">
+            <div className="row flex-initial w-96 m-auto">
               <img className="w-44" src={TitleSVG} alt="Title" />
             </div>
             <div className="row w-96 m-auto">
@@ -56,7 +56,10 @@ function LandingPage() {
                 <Buttons
                   title="Get-Started"
                   name="Get Started"
-                  btnClass="w-72 h-24 bg-black text-white rounded-2xl mt-5 text-2xl font-bold"
+                  btnClass="Get-Started w-72 h-24 bg-black text-white rounded-2xl mt-5 text-2xl font-bold"
+                  onClickAction={() => {
+                    navigate("/login");
+                  }}
                 />
               </div>
             </div>
@@ -70,7 +73,7 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <div className="breaker mt-2">
+      <div className="breaker mt-2 flex justify-center">
         <div className="container">
           <div className="col-1 flex m-auto">
             <div className="row flex-initial w-96 m-auto">
@@ -84,7 +87,7 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <div id="page2">
+      <div id="page2" className="flex justify-center">
         <div className="container">
           <div className="col-1 flex m-auto">
             <div className="row flex-initial w-96 m-auto">
@@ -106,7 +109,7 @@ function LandingPage() {
             </div>
           </div>
           <img
-            className="landingPage-bg-3 w-full mt-5"
+            className="landingPage-bg-3 w-screen mt-5"
             src={ZigZagIcon}
             alt="ZigZagIcon"
           />
@@ -168,7 +171,7 @@ function LandingPage() {
           </div>
         </div>
       </div>
-      <div id="page3">
+      <div id="page3" className="flex justify-center">
         <div className="container">
           <div className="col m-10">
             <div className="row font-bold text-center text-5xl">
@@ -177,14 +180,17 @@ function LandingPage() {
             <div className="row mt-20 mb-20 text-center">
               <Buttons
                 title="Gabung-Sekarang"
-                btnClass="Gabung-Sekarang w-44 h-20 rounded text-white text-3xl font-bold bg-black rounded-3xl"
+                btnClass="Gabung-Sekarang w-46 h-20 p-5 rounded text-white text-3xl font-bold bg-black rounded-3xl"
                 name="Gabung Sekarang"
+                onClickAction={() => {
+                  navigate("/login");
+                }}
               />
             </div>
           </div>
         </div>
       </div>
-      <div id="page4">
+      <div id="page4" className="flex justify-center">
         <div className="container flex flex-col items-center">
           <div className="col-1 text-center font-bold text-white m-auto text-5xl mt-24">
             LOGO
