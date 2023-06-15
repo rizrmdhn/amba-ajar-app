@@ -5,16 +5,222 @@
 }
 .LandingPage > #page1 {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(180deg, #A6D7FF 80.27%, rgba(218, 245, 246, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    #a6d7ff 80.27%,
+    rgba(218, 245, 246, 0) 100%
+  );
   height: 720px;
 }
 .LandingPage > #page2 {
   font-family: "Inter", sans-serif;
-  background: linear-gradient(0deg, #70BEFF 2.62%, rgba(112, 190, 255, 0.792054) 22.82%, rgba(112, 190, 255, 0.578566) 87.5%, rgba(253, 253, 253, 0) 100%);
+  background: linear-gradient(
+    0deg,
+    #70beff 2.62%,
+    rgba(112, 190, 255, 0.792054) 22.82%,
+    rgba(112, 190, 255, 0.578566) 87.5%,
+    rgba(253, 253, 253, 0) 100%
+  );
   height: 1300px;
 }
 .LandingPage > #page4 {
   font-family: "Inter", sans-serif;
   background: black;
   height: 317px;
+}
+.Login-page {
+  --font-type: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  width: auto;
+  background-color: #78c1fe;
+  display: flex;
+  flex-direction: column;
+}
+.Login-page > .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-login {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.container-login > .login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form__input {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #c4c4c4;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-family: var(--font-type);
+}
+
+.login-form__header--title {
+  font-size: 40px;
+  font-family: var(--font-type);
+  font-weight: bold;
+}
+
+.login-form__header--subtitle {
+  font-size: 15px;
+  font-family: var(--font-type);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.btn-login {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1093ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: var(--font-type);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-login:hover {
+  cursor: pointer;
+}
+
+.login-form__need-account {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.login-form__need-account--text {
+  font-size: 14px;
+  font-family: var(--font-type);
+  font-weight: 200;
+}
+
+.login-form__need-account--link {
+  font-size: 14px;
+  font-family: var(--font-type);
+  font-weight: 700;
+  margin-left: 5px;
+  color: #1093ff;
+}
+
+.login-form__need-account--link:hover {
+  text-decoration: underline;
+}
+
+.login-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-page {
+  --font-type: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
+  width: auto;
+  background-color: #78c1fe;
+  display: flex;
+  flex-direction: column;
+}
+.register-page > .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-register {
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+.container-register > .register-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-form__header--title {
+  font-size: 40px;
+  font-family: var(--font-type);
+  font-weight: bold;
+}
+
+.register-form__header--subtitle {
+  font-size: 15px;
+  font-family: var(--font-type);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.btn-register {
+  width: 300px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: #1093ff;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: var(--font-type);
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.btn-register:hover {
+  cursor: pointer;
+}
+
+.register-form__have-a-account {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.register-form__have-a-account--text {
+  font-size: 14px;
+  font-family: var(--font-type);
+  font-weight: 200;
+}
+
+.register-form__have-a-account--link {
+  font-size: 14px;
+  font-family: var(--font-type);
+  font-weight: 700;
+  margin-left: 5px;
+  color: #1093ff;
+}
+
+.register-form__have-a-account--link:hover {
+  text-decoration: underline;
+}
+
+.register-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

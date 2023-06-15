@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import Buttons from "../components/Buttons";
 import TitleSVG from "../assets/amba-ajar.svg";
 import BackgroundIcon from "../assets/Group.svg";
@@ -13,6 +14,8 @@ import InstagramIcon from "../assets/Instagram.svg";
 import LinkedinIcon from "../assets/Linkedin.svg";
 
 function LandingPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="LandingPage">
       <div id="page1">
@@ -26,11 +29,17 @@ function LandingPage() {
                 title="Register"
                 btnClass="register w-32 h-8 rounded text-black text-xl font-bold"
                 name="Register"
+                onClickAction={() => {
+                  navigate("/register");
+                }}
               />
               <Buttons
                 title="Login"
                 btnClass="login w-32 h-8 bg-blue-900 rounded-full text-white text-xl font-bold"
                 name="Login"
+                onClickAction={() => {
+                  navigate("/login");
+                }}
               />
             </div>
           </div>
